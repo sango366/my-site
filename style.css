@@ -1,0 +1,212 @@
+/*下準備　全体的なことをする。*/
+* {                 /* リセットCSS*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {               /*リンクの下線をなしにする*/
+    text-decoration: none;
+}
+p {   				/*全体に関わることだから*/
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.clearfix::after {      /*回りこみを防ぐ*/
+    content: "";
+    display: block;
+    clear: both;
+}
+.container {     /*ヘッダーはwidth 100%  heightは70。しかし、ブロックを入れる*/
+    width: 1024px;
+    margin: 0 auto;
+}
+.heading {
+    padding-top: 90px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+}
+.heading-text {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 16px;
+}
+/*ここからが本番*/
+/*まずはヘッダー*/
+
+header {           /* class  idじゃない場合は、この書き方でいい*/
+    width: 100%;
+    height: 70px;
+    background-color: #EC715F;
+}
+.logo {      /*my siteログをコーディングする。高さを親要素と同じにしないと。*/
+    height: 70px;
+    float: left;
+}
+.nav-list {
+    float: right;
+    width: 120px;
+    line-height: 70px;
+    color: #FAFAFA;
+    padding:0 30px;
+    list-style: none;
+    font-size: 16px;
+}
+.nav-list a {
+    color: #FAFAFA;
+}
+
+/*mainを作る*/
+#main{                 /*secitonタグは、＃で。一つしかないし、classじゃなくてこっちの方が間違いが減る*/
+    width: 100%;
+    height: 650px;
+    text-align: center;
+    color: #FAFAFA;
+    background-image: url(img/mv.png);
+    background-size: cover;
+    background-position: center;
+}
+.title {
+    padding-top: 200px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 64px;
+}
+
+.mv-text {
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+/*ポートフォリオを作成する。*/
+
+#portfolio {
+    background-color: #ECEFF1;
+}
+.production-group {
+    width: 920px;
+    padding: 30px 0 90px 0;
+    margin: 0 auto;
+}
+.production {
+    float: left;
+    width: 300px;
+    height: 250px;
+    margin: 10px 10px 0 0;
+    background-size: cover;
+    background-position: center;
+}
+.bg-1 {
+    background-image: url(img/sketch.jpg);
+}
+.bg-2 {
+    background-image: url(img/websuku.png);
+}
+.bg-3 {
+    background-image: url(img/write.jpg);
+}
+.bg-4 {
+    background-image: url(img/webcamp.png);
+}
+.bg-5 {
+    background-image: url(img/talk.jpg);
+}
+.bg-6 {
+    background-image: url(img/webcamp-mother.png);
+}
+.production:nth-child(-n+3) {
+    margin-top: 0;
+}
+.production:nth-child(3n) {
+    margin-right: 0;
+}
+
+/*フィーチャーを作成する*/
+
+#feature {
+    background-size: cover;
+    background-position: center;
+}
+.strength-group {
+    width: 980px;
+    padding: 30px 0 90px 0;
+    margin: 0 auto;
+}
+.strength {
+    float: left;
+    width: 320px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 60px;
+}
+.strength:last-child{       /*最後は右のマージンがあることで下に領域が入ってしまうため、ラストチャイルドを使う*/
+	margin-right: 0;
+}
+/*    }       これひとつ入るだけで、うまくいかなくなる。strengthの文字が大きくなる。画像が合わなくなる*/
+.strength-title {
+    padding: 10px 0;
+    font-size: 20px;
+}
+.strength-text{
+	text-align: left;
+	font-size: 16px;
+}
+#profile {
+    background-color: #ECEFF1;
+}
+.profile-group {
+    padding: 30px 0 90px 0;
+}
+.left-content {
+    width: 50%;
+    float: left;
+}
+.my-face {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-image: url(img/my-icon.jpg);
+}
+.right-content {
+    width: 50%;
+    float: right;
+}
+.discription-text {
+    font-size: 16px;
+}
+.discription-title {
+    margin: 20px 0 5px 0;
+    font-size: 20px;
+}
+.discription-title:first-child {
+    margin-top: 0;
+}
+.contact-group {
+    width: 800px;
+    padding: 30px 0 90px 0;
+    margin: 0 auto;
+}
+.left-contact-content {
+    width: 130px;
+    margin: 0 auto;
+}
+.right-contact-content {
+    width: 170px;
+    margin: 0 auto;
+}
+.link-text {
+    text-decoration: underline;
+    color: #212121;
+}
+.right-contact-content .fa {
+    font-size: 50px;
+    margin-right: 20px;
+}
+.right-contact-content .fa:last-child {
+    margin-right: 0;
+}
+
+
