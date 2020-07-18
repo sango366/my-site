@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<!-- viewportの設定/ -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>WALS成果物</title>
 	<!-- CSSの読み込み -->
 	<link rel="stylesheet" href="style.css"> <!-- css/がないとダメ？ -->
@@ -16,7 +16,12 @@
     <div class="container clearfix">   <!-- ここに全角が入っていた。コメントアウトしているところはピンクにならないから注意 --><!-- まわり込みを防ぐ。 -->
       <a href="#main">   <!-- #IDとすることで、そこに飛べる -->           <!-- Aタグで、領域を確保する。その中に入れる。画像を -->
 	    <img class="logo" src="img/logo.png" alt="ロゴ"></a>
-	  <nav>
+	    <div class="menu-box">
+			<div class="list-bar"></div>
+			<div class="list-bar"></div>
+			<div class="list-bar"></div>
+			</div>
+	  <nav class="byebye">
 		<ul class="nav">
 		  <li class="nav-list"><a href="#portfolio">Portfolio</a></li>
 		  <li class="nav-list"><a href="#feature">Feature</a></li>
@@ -31,7 +36,7 @@
   <section id="main">
   	<div class="container">
   		<h1 class="title">Lorem Ipsum</h1>
-  		<p class="mv-text">simly dummy text of the printing</p>
+  		<p class="text">simly dummy text of the printing</p>
   	</div>
   </section>
 	<!-- portfolio -->
@@ -42,11 +47,11 @@
 				It is a long established fact that a reader will be distracted by the readable<br> content of a page when looking at its layout.<br> The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
 			</p>
 			<div class="production-group clearfix">
-				<div class="production bg-1"></div>
+				<div class="production bg-1 byebye"></div>
 				<div class="production bg-2"></div>
-				<div class="production bg-3"></div>
+				<div class="production bg-3 byebye"></div>
 				<div class="production bg-4"></div>
-				<div class="production bg-5"></div>
+				<div class="production bg-5 byebye"></div>
 	　　			<div class="production bg-6"></div>
 			</div>
 		</div>
